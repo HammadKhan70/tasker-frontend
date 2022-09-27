@@ -28,7 +28,6 @@ function dashboard() {
     })
 
     const data = await response.json()
-    console.log('DATA IN DASH', data)
      if(data.message == 9){
       setUserData(data.result)
      }else{
@@ -38,10 +37,8 @@ function dashboard() {
   
   useEffect(() => {
     const token = localStorage.getItem('token')
-    console.log('Token local', token)
     if(token){
      const id = jwt_decode(token)
-     console.log('Token local user', id.user)
      if(!id.user){
        localStorage.removeItem('token')
        navigate('/login')

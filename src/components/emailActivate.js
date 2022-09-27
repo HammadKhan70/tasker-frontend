@@ -8,8 +8,7 @@ import { Button, Form } from 'react-bootstrap';
 
 function emailActivate() {
   const { hashToken } = useParams();
-  console.log('hahToken  LOCA', hashToken)
-
+  
   const [emailData, setEmailData] = useState('')
 
   async function activeEmail(event) {
@@ -25,7 +24,6 @@ function emailActivate() {
       })
     })
     const data = await response.json()
-    console.log('DATAT  ', data)
 
     if (data.message === 16) {
       setEmailData('Activated Successfully')

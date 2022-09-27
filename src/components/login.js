@@ -37,7 +37,6 @@ function Login() {
     } if (data.message === 6) {
       setWarning('Please Activate Your Account')
     }
-    console.log('DATA ', data)
   }
   return (
 

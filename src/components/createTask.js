@@ -19,7 +19,7 @@ const CreateTask = () => {
     const userId = jwt_decode(token)
     const user = userId.user
     var auth = "Basic " + new Buffer(user + ":" + token).toString("base64");
-    console.log('TASK NAME', taskName)
+    
     const response = await fetch('http://localhost:3005/api/addTask',{
       method: 'POST',
       headers: {
@@ -30,10 +30,8 @@ const CreateTask = () => {
         taskName
       })
     })
-    console.log('RESPONSE', response)
-  
+    
     const data = await response.json()
-    console.log('DATA IN DASH', data)
      if(data.message == 10){
       setTaskName(data.result)
       //setMessage('Added Successfully')
@@ -61,7 +59,6 @@ const CreateTask = () => {
     })
 
     const getData = await response.json()
-    console.log('DATA IN GETTASK', getData)
      if(getData.message == 13){
       setTaskData(getData.result)
      }else{
@@ -71,7 +68,6 @@ const CreateTask = () => {
 
   // DELETE TASK
   async function deleteTask(id){
-    console.log('ID IDDID ====>', id)
     let token = localStorage.getItem('token')
     const userId = jwt_decode(token)
     const user = userId.user
@@ -89,7 +85,6 @@ const CreateTask = () => {
     })
 
     const deleteData = await response.json()
-    console.log('DATA IN GETTASK', deleteData)
      if(deleteData.message == 12){
       // setTaskData(getData.result)
       getTask()

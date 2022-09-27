@@ -30,8 +30,6 @@ function Signup() {
     })
 
     const data = await response.json()
-     console.log('DATA ', data)
-    
      if(data.message === 4){
        navigate('/login')
     }
