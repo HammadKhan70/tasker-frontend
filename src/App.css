@@ -1,0 +1,50 @@
+.App {
+  justify-content: center;
+  align-items: center; 
+  /* background-image: url("https://img.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg?w=996&t=st=1662493639~exp=1662494239~hmac=c4ae6cd66995e59dd0992b32fd92b841c72aa5e480bb1337033a16282ff8bf11"); */
+  /* background-image: url("https://img.freepik.com/free-vector/man-woman-riding-bicycles-sun-cityscape-background_1262-19804.jpg?w=996&t=st=1662719196~exp=1662719796~hmac=203b15e5cd776129366cee62bdae3aaa062e52e9a5b0c954a3375c0fbc830f8d"); */
+  /* background-image: url("https://images.pexels.com/photos/1097930/pexels-photo-1097930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  /* background-image: url("https://images.pexels.com/photos/1111318/pexels-photo-1111318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  background-color:white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainHead {
+  font-family: 'Montserrat', sans-serif;
+  color: aliceblue;
+}
+
+/* .get-data {
+  justify-content: center; 
+   align-items: center;
+  margin-top: 5vh;
+  color: aliceblue;
+} */
+
+.input {
+  /* margin-top: 30vh; */
+  height: 3vh;
+  width: 30ch;
+}
+
+.add-button {
+  margin-left: 25px;
+  height: 4vh;
+  width: 10ch;
+}
+
+.list {
+  padding-top: 5px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background: #f6f7f8;
+  color: brown;
+  height: 3vh;
+  width: 20ch;
+}
+
+ 
