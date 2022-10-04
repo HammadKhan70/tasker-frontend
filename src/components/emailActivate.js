@@ -14,7 +14,7 @@ function emailActivate() {
   async function activeEmail(event) {
     event.preventDefault()
 
-    const response = await fetch('http://localhost:3005/api/confirmEmail', {
+    const response = await fetch('http://13.229.78.62:3005/api/confirmEmail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

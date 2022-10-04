@@ -20,7 +20,7 @@ const CreateTask = () => {
     const user = userId.user
     var auth = "Basic " + new Buffer(user + ":" + token).toString("base64");
     
-    const response = await fetch('http://localhost:3005/api/addTask',{
+    const response = await fetch('http://13.229.78.62:3005/api/addTask',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ const CreateTask = () => {
     const user = userId.user
     var auth = "Basic " + new Buffer(user + ":" + token).toString("base64");
     
-    const response = await fetch('http://localhost:3005/api/getTasks',{
+    const response = await fetch('http://13.229.78.62:3005/api/getTasks',{
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ const CreateTask = () => {
     const user = userId.user
     var auth = "Basic " + new Buffer(user + ":" + token).toString("base64");
     
-    const response = await fetch('http://localhost:3005/api/deleteTask',{
+    const response = await fetch('http://13.229.78.62:3005/api/deleteTask',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

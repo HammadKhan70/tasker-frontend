@@ -19,7 +19,7 @@ function dashboard() {
     const user = userId.user
     var auth = "Basic " + new Buffer(user + ":" + token).toString("base64");
     
-    const response = await fetch('http://localhost:3005/api/getUser',{
+    const response = await fetch('http://13.229.78.62:3005/api/getUser',{
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

@@ -17,7 +17,7 @@ function Signup() {
   async function registerUser(event){
     event.preventDefault()
 
-    const response = await fetch('http://localhost:3005/api/registerUser',{
+    const response = await fetch('http://13.229.78.62:3005/api/registerUser',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
